@@ -1,0 +1,119 @@
+1,Écoute de Civadière,12,1
+2,Balancine de Civadière,8,1
+3,Drisse de Civadière,9,1
+4,Cargue Point de Civadière,14,1
+5,Cargue Fond de Civadière,14,1
+6,Bras de Civadière,2,1
+7,CaleBas de Petit Foc,6,2
+8,Écoute de Petit Foc,12,2
+9,Drisse de Petit Foc,9,2
+10,Drisse de Grand Foc,9,3
+11,Écoute de Grand Foc,12,3
+12,Halebreu de Grand Foc,5,3
+13,CaleBas de Grand Foc,6,3
+14,Halededans de Grand Foc,,3
+15,Draille de Grand Foc,,3
+16,Bras de Misaine,2,4
+17,Écoute de Misaine,12,4
+18,Drisse de Misaine,9,4
+19,Balancine de Misaine,8,4
+20,Contre Bras de Misaine,2,4
+21,Bouline de Misaine,1,4
+22,Drosse de Misaine,10,4
+23,Amure de Misaine,13,4
+24,Cargue Point de Misaine,14,4
+25,Cargue Fond de Misaine,14,4
+26,Cargue Bouline de Misaine,14,4
+27,Bras de Petit Hunier,2,5
+28,Palanquin de Ris de Petit Hunier,3,5
+29,Galhauban Volant de Petit Hunier,7,5
+30,Écoute de Petit Hunier,12,5
+31,Bouline de Petit Hunier,1,5
+32,Balancine de Petit Hunier,8,5
+33,Cargue Point de Petit Hunier,14,5
+34,Cargue Fond de Petit Hunier,14,5
+35,Cargue Bouline de Petit Hunier,14,5
+36,Drisse de Petit Hunier,9,5
+37,Brague de Sécurité de Petit Hunier,11,5
+38,Chapeau de Petit Hunier,,5
+39,Balancine de Petit Perroquet,8,6
+40,Drisse de Petit Perroquet,9,6
+41,Écoute de Petit Perroquet,12,6
+42,Cargue Point de Petit Perroquet,14,6
+43,Bras de Petit Perroquet,2,6
+44,Bras de Grand Voile,2,7
+45,Cargue Bouline de Grand Voile,14,77
+46,Cargue Fond de Grand Voile,14,7
+47,Balancine de Grand Voile,8,7
+48,Cargue Point de Grand Voile,14,7
+49,Écoute de Grand Voile,12,7
+50,Drisse de Grand Voile,9,7
+51,Drosse de Grand Voile,10,7
+52,Amure de Grand Voile,13,7
+53,Bouline de Grand Voile,1,7
+54,Contre Bras de Grand Voile,2,7
+55,Chapeau de Grand Voile,,7
+56,Bras de Grand Hunier,2,8
+57,Brague de Sécurité de Grand Hunier,11,8
+58,Drisse de Grand Hunier,9,8
+59,Cargue Fond de Grand Hunier,14,8
+60,Cargue Bouline de Grand Hunier,14,8
+61,Balancine de Grand Hunier,8,8
+62,Cargue Point de Grand Hunier,14,8
+63,Palanquin de Ris de Grand Hunier,3,8
+64,Galhauban Volant de Grand Hunier,7,8
+65,Écoute de Grand Hunier,12,8
+66,Bouline de Grand Hunier,1,8
+67,Chapeau de Grand Hunier,,8
+68,Bras de Grand Perroquet,2,9
+69,Drisse de Grand Perroquet,9,9
+70,Cargue Point de Grand Perroquet,14,9
+71,Écoute de Grand Perroquet,12,9
+72,Cargue Bouline/Cargue Fond de Grand Perroquet,14,9
+73,Galhauban Volant de Grand Perroquet,7,9
+74,Balancine de Grand Perroquet,8,9
+75,Balancine de Vergue Sèche,8,
+76,Bras de Vergue Sèche,2,
+77,Écoute d’Artimon,12,10
+78,Garde Corne d’Artimon,,10
+79,Drisse de Pic de Corne d’Artimon,9,10
+80,Drisse de Mât de Crone d’Artimon,9,10
+81,Cargue Point d’Artimon,14,10
+82,Drisse de Perroquet de Fougue,9,11
+83,Cargue Bouline de Perroquet de Fougue,14,11
+84,Cargue Fond de Perroquet de Fougue,14,11
+85,Palanquin de Ris de Perroquet de Fougue,3,11
+86,Balancine de Perroquet de Fougue,8,11
+87,Cargue Point de Perroquet de Fougue,14,11
+88,Écoute de Perroquet de Fougue,12,11
+89,Bouline de Perroquet de Fougue,1,11
+90,Bras de Perroquet de Fougue,2,11
+91,Chapeau de Perroquet de Fougue,,11
+92,Drisse de Perruche,9,12
+93,Cargue Point de Perruche,14,12
+94,Écoute de Perruche,12,12
+95,Bras de Perruche,2,12
+96,Balancine de Perruche,8,12
+97,Écoute de Foc d’Artimon,12,15
+98,Drisse de Foc d’Artimon,9,15
+99,Contre Écoute de Foc d’Artimon,12,15
+100,HaleBas de Foc d’Artimon,4,15
+101,Drisse de Voile d’Étai de Perroquet de Fougue,9,16
+102,Drisse de Voile d’Étai de Grand Hunier,9,14
+103,Écoute de Voile d’Étai de Grand Hunier,12,14
+104,Cargue Point de Voile d’Étai de Grand Hunier,14,14
+105,HaleBas de Voile d’Étai de Grand Hunier,4,14
+106,Drisse de Grand Voile d’Étai,9,13
+107,Écoute de Grand Voile d’Étai,12,13
+108,HaleBas de Grand Voile d’Étai,4,13
+109,Candelette,,
+110,Braguette,,
+111,Caliorne,,
+112,Palan de Bout de Vergue,,
+113,Drisse de Palan de Bout de Vergue,9,
+114,Bras de Corne de charge Tribord Amure,2,
+115,Bras de Corne de charge Babord Amure,2,
+116,Drisse de MOB,9,
+117,Drisse de Minot,9,
+118,Hale à bord de Minot,,
+119,Palan Anti Roulis de Hunier,,
