@@ -1,4 +1,4 @@
-export default class Voile {
+export default class TypePoint {
 	constructor(id, name) {
 		this._id = id;
 		this._name = name;

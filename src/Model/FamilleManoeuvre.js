@@ -4,11 +4,19 @@ export default class FamilleManoeuvre {
 		this._name = name;
 	}
 
-	get id() {
-		return this._id;
-	}
+    get id() {
+        return this._id;
+    }
 
-	get name() {
-		return this._name;
-	}
+    set id(value) {
+        this._id = value;
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(value) {
+        this._name = value;
+    }
 }
