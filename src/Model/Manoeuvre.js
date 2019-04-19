@@ -4,9 +4,9 @@ import Voile from "./Voile.js";
 
 export default class Manoeuvre {
 
-    constructor(id, name, famille, voile) {
+    constructor(id, nom, famille, voile) {
         this._id = id;
-        this._name = name;
+        this._nom = nom;
         this._famille = famille;
         this._voile = voile;
     }
@@ -14,7 +14,7 @@ export default class Manoeuvre {
     static get metadata() {
         let metadata = new Metadata();
         metadata.addIdentifier('id')
-            .addField('name')
+            .addField('nom')
             .addAssociation('famille', FamilleManoeuvre)
             .addAssociation('voile', Voile)
             .setClass(Manoeuvre);
@@ -30,12 +30,12 @@ export default class Manoeuvre {
         this._id = value;
     }
 
-    get name() {
-        return this._name;
+    get nom() {
+        return this._nom;
     }
 
-    set name(value) {
-        this._name = value;
+    set nom(value) {
+        this._nom = value;
     }
 
     get famille() {

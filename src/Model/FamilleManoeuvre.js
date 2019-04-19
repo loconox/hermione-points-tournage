@@ -1,15 +1,15 @@
 import Metadata from "../ORM/Metadata.js";
 
 export default class FamilleManoeuvre {
-	constructor(id, name) {
+	constructor(id, nom) {
 		this._id = id;
-		this._name = name;
+		this._nom = nom;
 	}
 
 	static get metadata() {
 		let metadata = new Metadata();
 		metadata.addIdentifier('id')
-			.addField('name')
+			.addField('nom')
 			.setClass(FamilleManoeuvre);
 
 		return metadata;
@@ -23,11 +23,11 @@ export default class FamilleManoeuvre {
         this._id = value;
     }
 
-    get name() {
-        return this._name;
+    get nom() {
+        return this._nom;
     }
 
-    set name(value) {
-        this._name = value;
+    set nom(value) {
+        this._nom = value;
     }
 }
