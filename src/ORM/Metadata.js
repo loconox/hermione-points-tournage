@@ -7,7 +7,6 @@ export default class Metadata {
         this._associations = {};
     }
 
-
     get identifier() {
         return this._identifier;
     }
@@ -16,6 +15,10 @@ export default class Metadata {
         this._identifier = value;
 
         return this;
+    }
+
+    getIdentifierValue(object) {
+        return object[this.identifier];
     }
 
     get fields() {
@@ -32,8 +35,10 @@ export default class Metadata {
         return this._class;
     }
 
-    set class(value) {
+    setClass(value) {
         this._class = value;
+
+        return this;
     }
 
     get associations() {

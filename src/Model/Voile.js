@@ -1,7 +1,18 @@
+import Metadata from "../ORM/Metadata.js";
+
 export default class Voile {
 	constructor(id, name) {
 		this._id = id;
 		this._name = name;
+	}
+
+	static get metadata() {
+		let metadata = new Metadata();
+		metadata.addIdentifier('id')
+			.addField('name')
+			.setClass(Voile);
+
+		return metadata;
 	}
 
     get id() {

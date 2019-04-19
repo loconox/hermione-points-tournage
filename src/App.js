@@ -4,54 +4,35 @@ import FamilleManoeuvre from "./Model/FamilleManoeuvre.js";
 import Manoeuvre from "./Model/Manoeuvre.js";
 import TypePoint from "./Model/TypePoint.js";
 import Point from "./Model/Point.js";
+import Registry from "./ORM/Registry.js";
 
 export default class App {
 
     constructor() {
-        this._voiles = [];
-        this._mats = [];
-        this._familleManoeuvres = [];
-        this._manoeuvres = [];
-        this._typePoints = [];
-        this._points = [];
+        let registry = new Registry();
+        registry.register(FamilleManoeuvre);
+        registry.load('/data/famille_manoeuvres.csv', FamilleManoeuvre);
+        registry.register(Mat);
+        registry.load('/data/mats.csv', Mat);
+        registry.register(Voile);
+        registry.load('/data/voiles.csv', Voile);
+        registry.register(Manoeuvre);
+        registry.load('/data/manoeuvres.csv', Manoeuvre);
+        registry.register(TypePoint);
+        registry.load('/data/type_points.csv', TypePoint);
+        registry.register(Point);
+        registry.load('/data/points.csv', Point);
+        this._registry = registry;
     }
 
     lancer() {
-        this._voiles = this._chargerData('/data/voiles.csv', Voile);
-        console.log(this._voiles.length + ' voiles chargées');
-        this._mats = this._chargerData('/data/mats.csv', Mat);
-        console.log(this._mats.length + ' mâts chargés');
-        this._familleManoeuvres = this._chargerData('/data/famille_manoeuvres.csv', FamilleManoeuvre);
-        console.log(this._familleManoeuvres.length + ' famille de manoeuvres chargées');
-        this._manoeuvres = this._chargerData('/data/manoeuvres.csv', Manoeuvre);
-
-        console.log(this._manoeuvres.length + ' manoeuvres chargées');
-        this._typePoints = this._chargerData('/data/type_points.csv', TypePoint);
-        console.log(this._typePoints.length + ' types de point de tournage chargés');
-        this._points = this._chargerData('/data/points.csv', Point);
-        console.log(this._points.length + ' points de tournage chargés');
+        this._registry.dump();
 
         this._draw();
 
-    }
-
-    _chargerData(filename, klass) {
-        let result = [];
-
-        jQuery.ajax({
-            url: filename,
-            async: false
-        })
-            .done(function (file) {
-                let lines = file.split("\n");
-                for (const line of lines) {
-                    const attributes = line.split(',');
-                    let object = new klass(...attributes);
-                    result.push(object);
-                }
-            });
-
-        return result;
+        for (const point of this._registry.findAll(Point)) {
+            this._drawPoint(point);
+        }
     }
 
     _drawElements(elements) {
@@ -65,10 +46,6 @@ export default class App {
 
     _initCanvas() {
         let canvas = document.getElementById("container").getContext("2d");
-
-        canvas.moveTo(50, 0);
-        canvas.lineTo(50, 200);
-        canvas.stroke();
     }
 
     _draw() {
@@ -95,5 +72,12 @@ export default class App {
 
         this._initCanvas();
         this._drawElements(elements);
+    }
+
+    _drawPoint(point) {
+        let canvas = document.getElementById("container").getContext("2d");
+
+        canvas.rect(point.x1, point.y1, point.x2 - point.x1, point.y2 - point.y1);
+        canvas.stroke();
     }
 }

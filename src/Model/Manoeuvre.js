@@ -1,6 +1,6 @@
-import Metadata from "../ORM/Metadata";
-import FamilleManoeuvre from "./FamilleManoeuvre";
-import Voile from "./Voile";
+import Metadata from "../ORM/Metadata.js";
+import FamilleManoeuvre from "./FamilleManoeuvre.js";
+import Voile from "./Voile.js";
 
 export default class Manoeuvre {
 
@@ -9,12 +9,17 @@ export default class Manoeuvre {
         this._name = name;
         this._famille = famille;
         this._voile = voile;
+    }
+
+    static get metadata() {
         let metadata = new Metadata();
         metadata.addIdentifier('id')
             .addField('name')
             .addAssociation('famille', FamilleManoeuvre)
-            .addAssociation('voile', Voile);
-        this._metadata = metadata;
+            .addAssociation('voile', Voile)
+            .setClass(Manoeuvre);
+
+        return metadata;
     }
 
     get id() {
@@ -47,9 +52,5 @@ export default class Manoeuvre {
 
     set voile(value) {
         this._voile = value;
-    }
-
-    get metadata() {
-        return this._metadata;
     }
 }
